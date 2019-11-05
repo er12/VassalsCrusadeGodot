@@ -1,0 +1,258 @@
+[gd_scene load_steps=15 format=2]
+
+[ext_resource path="res://assets/Corner1.png" type="Texture" id=1]
+[ext_resource path="res://assets/Corner2.png" type="Texture" id=2]
+[ext_resource path="res://assets/Corner3.png" type="Texture" id=3]
+[ext_resource path="res://assets/Corner4.png" type="Texture" id=4]
+[ext_resource path="res://assets/Gnor.png" type="Texture" id=5]
+[ext_resource path="res://assets/Geast.png" type="Texture" id=6]
+[ext_resource path="res://assets/Gsou.png" type="Texture" id=7]
+[ext_resource path="res://assets/Gwest.png" type="Texture" id=8]
+[ext_resource path="res://assets/Tile.png" type="Texture" id=9]
+[ext_resource path="res://assets/Wnor.png" type="Texture" id=10]
+[ext_resource path="res://assets/West.png" type="Texture" id=11]
+[ext_resource path="res://assets/Wsou.png" type="Texture" id=12]
+[ext_resource path="res://assets/Wwest.png" type="Texture" id=13]
+
+[sub_resource type="RectangleShape2D" id=1]
+
+custom_solver_bias = 0.0
+extents = Vector2( 8.04472, 7.94115 )
+
+[node name="Node2D" type="Node2D" index="0"]
+
+position = Vector2( 0, -0.263519 )
+
+[node name="Corner1" type="Sprite" parent="." index="0"]
+
+position = Vector2( 10.3662, 11.322 )
+texture = ExtResource( 1 )
+_sections_unfolded = [ "Transform", "Z Index" ]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Corner1" index="0"]
+
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Corner1/StaticBody2D" index="0"]
+
+build_mode = 0
+polygon = PoolVector2Array( -7.9922, -7.98859, -7.98179, 8.02015, 5.32066, 7.97852, 5.29985, 5.44918, 7.99573, 5.44918, 7.99573, -7.97818 )
+
+[node name="Corner2" type="Sprite" parent="." index="1"]
+
+position = Vector2( 85.6131, 78.805 )
+texture = ExtResource( 2 )
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="Corner2" index="0"]
+
+position = Vector2( -13.9438, -18.6625 )
+rotation = 3.14159
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+_sections_unfolded = [ "Transform" ]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Corner2/StaticBody2D2" index="0"]
+
+position = Vector2( -13.9234, -18.7235 )
+build_mode = 0
+polygon = PoolVector2Array( -7.9922, -7.98859, -7.98179, 8.02015, 5.32066, 7.97852, 5.29985, 5.44918, 7.99573, 5.44918, 7.99573, -7.97818 )
+
+[node name="Corner3" type="Sprite" parent="." index="2"]
+
+position = Vector2( 86.3924, 11.52 )
+texture = ExtResource( 3 )
+
+[node name="StaticBody2D3" type="StaticBody2D" parent="Corner3" index="0"]
+
+position = Vector2( -14.7232, -19.0606 )
+rotation = -3.14159
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+_sections_unfolded = [ "Transform" ]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Corner3/StaticBody2D3" index="0"]
+
+position = Vector2( -14.8792, -18.9734 )
+rotation = -1.5708
+build_mode = 0
+polygon = PoolVector2Array( -7.9922, -7.98859, -7.98179, 8.02015, 5.32066, 7.97852, 5.29985, 5.44918, 7.99573, 5.44918, 7.99573, -7.97818 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Corner4" type="Sprite" parent="." index="3"]
+
+position = Vector2( 12.9294, 79.8089 )
+rotation = 3.14159
+texture = ExtResource( 4 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="StaticBody2D4" type="StaticBody2D" parent="Corner4" index="0"]
+
+position = Vector2( -58.7398, 87.3495 )
+rotation = 6.3573e-08
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+_sections_unfolded = [ "Transform" ]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Corner4/StaticBody2D4" index="0"]
+
+position = Vector2( 58.5791, -87.2066 )
+rotation = 1.5708
+build_mode = 0
+polygon = PoolVector2Array( -7.9922, -7.98859, -7.98179, 8.02015, 5.32066, 7.97852, 5.29985, 5.44918, 7.99573, 5.44918, 7.99573, -7.97818 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Gnor" type="Sprite" parent="." index="4"]
+
+position = Vector2( 33.6762, 10.9291 )
+rotation = 3.14159
+texture = ExtResource( 5 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Geast" type="Sprite" parent="." index="5"]
+
+position = Vector2( 91.7324, 31.8662 )
+rotation = 3.14159
+texture = ExtResource( 6 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Gsou" type="Sprite" parent="." index="6"]
+
+position = Vector2( 40.9263, 81.7759 )
+rotation = 3.14159
+texture = ExtResource( 7 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Gwest" type="Sprite" parent="." index="7"]
+
+position = Vector2( 11.642, 30.5698 )
+rotation = 3.14159
+texture = ExtResource( 8 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Tile" type="Sprite" parent="." index="8"]
+
+position = Vector2( 41.8877, 51.7653 )
+rotation = 3.14159
+texture = ExtResource( 9 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Wnor" type="Sprite" parent="." index="9"]
+
+position = Vector2( 60.1334, 11.6416 )
+texture = ExtResource( 10 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Wnor" index="0"]
+
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Wnor/StaticBody2D" index="0"]
+
+position = Vector2( -0.00839615, -1.58537 )
+scale = Vector2( 0.999255, 0.855101 )
+shape = SubResource( 1 )
+disabled = true
+
+[node name="Weast" type="Sprite" parent="." index="10"]
+
+position = Vector2( 88.6037, 52.761 )
+texture = ExtResource( 11 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="Weast" index="0"]
+
+position = Vector2( -28.4704, -41.1194 )
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Weast/StaticBody2D2" index="0"]
+
+position = Vector2( -0.00839615, -1.58537 )
+scale = Vector2( 0.999255, 0.855101 )
+shape = SubResource( 1 )
+disabled = true
+
+[node name="Wsouth" type="Sprite" parent="." index="11"]
+
+position = Vector2( 64.3066, 80.4664 )
+texture = ExtResource( 12 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="StaticBody2D4" type="StaticBody2D" parent="Wsouth" index="0"]
+
+position = Vector2( -30.209, -41.7876 )
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Wsouth/StaticBody2D4" index="0"]
+
+position = Vector2( 30.1467, 43.2282 )
+scale = Vector2( 0.999255, 0.855101 )
+shape = SubResource( 1 )
+disabled = true
+_sections_unfolded = [ "Transform" ]
+
+[node name="Wwest" type="Sprite" parent="." index="12"]
+
+position = Vector2( 11.7595, 51.9792 )
+texture = ExtResource( 13 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="StaticBody2D3" type="StaticBody2D" parent="Wwest" index="0"]
+
+position = Vector2( 48.3738, -40.3376 )
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Wwest/StaticBody2D3" index="0"]
+
+position = Vector2( -49.6855, 40.1184 )
+rotation = 1.5708
+scale = Vector2( 0.999255, 0.855101 )
+shape = SubResource( 1 )
+disabled = true
+_sections_unfolded = [ "Transform" ]
+
+
